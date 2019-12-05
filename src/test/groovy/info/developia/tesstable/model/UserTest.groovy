@@ -1,7 +1,7 @@
 package info.developia.tesstable.model
 
-import spock.lang.*
-import tesstable.model.User
+
+import spock.lang.Specification
 
 class UserTest extends Specification {
     User user = new User()
@@ -29,6 +29,7 @@ class UserTest extends Specification {
         then:
         result == true
     }
+
     def "test validate Email Private Static"() {
         when:
         boolean result = user.validateEmailPrivateStatic("email@email.com")

@@ -1,4 +1,6 @@
-package tesstable.model;
+package info.developia.tesstable.repository;
+
+import info.developia.tesstable.model.User;
 
 import java.util.Map;
 

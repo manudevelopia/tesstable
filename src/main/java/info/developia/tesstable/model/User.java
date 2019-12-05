@@ -1,4 +1,4 @@
-package tesstable.model;
+package info.developia.tesstable.model;
 
 public class User {
     private String name;
@@ -42,5 +42,13 @@ public class User {
 
     private static boolean validateEmailPrivateStatic(String email) {
         return email.contains("@");
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

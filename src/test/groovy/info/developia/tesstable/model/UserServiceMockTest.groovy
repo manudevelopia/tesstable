@@ -1,15 +1,15 @@
 package info.developia.tesstable.model
 
-
+import info.developia.tesstable.model.User
+import info.developia.tesstable.repository.UserRepository
+import info.developia.tesstable.service.UserService
+import info.developia.tesstable.service.UserServiceImpl
 import spock.lang.Specification
-import tesstable.model.User
-import tesstable.model.UserRepository
-import tesstable.model.UserService
 
 class UserServiceMockTest extends Specification {
 
-    UserService userService = new UserService()
     UserRepository userRepository = Mock(UserRepository)
+    UserService userService = new UserServiceImpl()
     User user = new User(name: "Jason Bourne", email: "jason@bourne.com")
 
     def setup() {
